@@ -1,0 +1,1801 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_65" class="java.beans.XMLDecoder"> 
+ <object class="Core.XMLObject"> 
+  <void property="currentScore"> 
+   <int>9440</int> 
+  </void> 
+  <void property="gameName"> 
+   <string>asdf</string> 
+  </void> 
+  <void property="level"> 
+   <int>2</int> 
+  </void> 
+  <void property="lokumArray"> 
+   <array class="[LCore.Lokum;" length="10"> 
+    <void index="0"> 
+     <array class="Core.Lokum" length="10"> 
+      <void index="0"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="1"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>1</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="2"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1hazel.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Hazelnut</string> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>2</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="3"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1coco.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Coconut</string> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>3</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="4"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>4</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="5"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1coco.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Coconut</string> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>5</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="6"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>6</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="7"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>7</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="8"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>8</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="9"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1coco.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Coconut</string> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>9</int> 
+        </void> 
+       </object> 
+      </void> 
+     </array> 
+    </void> 
+    <void index="1"> 
+     <array class="Core.Lokum" length="10"> 
+      <void index="0"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>1</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="1"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1hazel.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Hazelnut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>1</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>1</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="2"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>1</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>2</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="3"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1hazel.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Hazelnut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>1</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>3</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="4"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>1</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>4</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="5"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>1</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>5</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="6"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1coco.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Coconut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>1</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>6</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="7"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1coco.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Coconut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>1</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>7</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="8"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>1</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>8</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="9"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>1</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>9</int> 
+        </void> 
+       </object> 
+      </void> 
+     </array> 
+    </void> 
+    <void index="2"> 
+     <array class="Core.Lokum" length="10"> 
+      <void index="0"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1coco.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Coconut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>2</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="1"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>2</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>1</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="2"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1coco.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Coconut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>2</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>2</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="3"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>2</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>3</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="4"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1coco.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Coconut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>2</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>4</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="5"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1hazel.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Hazelnut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>2</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>5</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="6"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1coco.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Coconut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>2</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>6</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="7"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>2</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>7</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="8"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>2</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>8</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="9"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>2</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>9</int> 
+        </void> 
+       </object> 
+      </void> 
+     </array> 
+    </void> 
+    <void index="3"> 
+     <array class="Core.Lokum" length="10"> 
+      <void index="0"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>3</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="1"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>3</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>1</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="2"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1hazel.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Hazelnut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>3</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>2</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="3"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>3</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>3</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="4"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>3</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>4</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="5"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>3</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>5</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="6"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>3</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>6</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="7"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1coco.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Coconut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>3</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>7</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="8"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>3</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>8</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="9"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>3</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>9</int> 
+        </void> 
+       </object> 
+      </void> 
+     </array> 
+    </void> 
+    <void index="4"> 
+     <array class="Core.Lokum" length="10"> 
+      <void index="0"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1coco.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Coconut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>4</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="1"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1hazel.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Hazelnut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>4</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>1</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="2"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>4</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>2</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="3"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>4</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>3</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="4"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>4</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>4</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="5"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1hazel.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Hazelnut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>4</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>5</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="6"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>4</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>6</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="7"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>4</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>7</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="8"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1coco.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Coconut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>4</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>8</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="9"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1hazel.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Hazelnut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>4</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>9</int> 
+        </void> 
+       </object> 
+      </void> 
+     </array> 
+    </void> 
+    <void index="5"> 
+     <array class="Core.Lokum" length="10"> 
+      <void index="0"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1hazel.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Hazelnut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>5</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="1"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>5</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>1</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="2"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1coco.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Coconut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>5</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>2</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="3"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1hazel.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Hazelnut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>5</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>3</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="4"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1hazel.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Hazelnut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>5</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>4</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="5"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1coco.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Coconut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>5</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>5</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="6"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1coco.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Coconut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>5</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>6</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="7"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>5</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>7</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="8"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1coco.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Coconut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>5</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>8</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="9"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>5</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>9</int> 
+        </void> 
+       </object> 
+      </void> 
+     </array> 
+    </void> 
+    <void index="6"> 
+     <array class="Core.Lokum" length="10"> 
+      <void index="0"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1hazel.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Hazelnut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>6</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="1"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1hazel.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Hazelnut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>6</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>1</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="2"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>6</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>2</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="3"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>6</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>3</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="4"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>6</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>4</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="5"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1coco.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Coconut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>6</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>5</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="6"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1coco.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Coconut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>6</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>6</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="7"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>6</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>7</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="8"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>6</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>8</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="9"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1hazel.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Hazelnut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>6</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>9</int> 
+        </void> 
+       </object> 
+      </void> 
+     </array> 
+    </void> 
+    <void index="7"> 
+     <array class="Core.Lokum" length="10"> 
+      <void index="0"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>7</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="1"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>7</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>1</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="2"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>7</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>2</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="3"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1coco.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Coconut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>7</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>3</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="4"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>7</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>4</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="5"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>7</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>5</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="6"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>7</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>6</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="7"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>7</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>7</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="8"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>7</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>8</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="9"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>7</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>9</int> 
+        </void> 
+       </object> 
+      </void> 
+     </array> 
+    </void> 
+    <void index="8"> 
+     <array class="Core.Lokum" length="10"> 
+      <void index="0"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>8</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="1"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1coco.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Coconut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>8</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>1</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="2"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/colorbomb.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>ColorBomb</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>8</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>2</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="3"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1hazel.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Hazelnut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>8</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>3</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="4"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1coco.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Coconut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>8</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>4</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="5"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>8</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>5</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="6"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>8</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>6</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="7"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>8</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>7</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="8"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>8</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>8</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="9"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1hazel.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Hazelnut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>8</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>9</int> 
+        </void> 
+       </object> 
+      </void> 
+     </array> 
+    </void> 
+    <void index="9"> 
+     <array class="Core.Lokum" length="10"> 
+      <void index="0"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1hazel.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Hazelnut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>9</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="1"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1rose.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Rose</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>9</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>1</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="2"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>9</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>2</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="3"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1pist.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Pistachio</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>9</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>3</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="4"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1hazel.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Hazelnut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>9</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>4</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="5"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1coco.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Coconut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>9</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>5</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="6"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1hazel.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Hazelnut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>9</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>6</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="7"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/3hazel.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>longitudinalStripedHazelnut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>9</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>7</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="8"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1coco.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Coconut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>9</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>8</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void index="9"> 
+       <object class="Core.BasicLokum"> 
+        <void property="icon"> 
+         <object class="javax.swing.ImageIcon"> 
+          <string>res/1coco.png</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>Coconut</string> 
+        </void> 
+        <void property="xofLokum"> 
+         <int>9</int> 
+        </void> 
+        <void property="yofLokum"> 
+         <int>9</int> 
+        </void> 
+       </object> 
+      </void> 
+     </array> 
+    </void> 
+   </array> 
+  </void> 
+  <void property="moveCount"> 
+   <int>48</int> 
+  </void> 
+ </object> 
+</java> 
