@@ -91,7 +91,7 @@ public class Lokum_test {
 	 *   t_c
 	 *   t_r
 	 * 
-	 * There are 22^2 possible combinations for which hasSameRoot method can be applied.
+	 * There are 20^2 possible combinations for which hasSameRoot method can be applied.
 	 * 
 	 * A.If we check the method for basic pistachio(b_p) column, we can make a generalization for basic lokums(the flagged intersection of l_p column and all rows shows the cases 
 	 *  the test codes will include.).
@@ -122,7 +122,7 @@ public class Lokum_test {
 	 *  It is OK if we include two tests one of which returns true, another one returns false.(the flagged intersection of t_p column and all rows shows the cases 
 	 *  the test codes will include.)
 	 *  
-	 *  To sum up we can work on 30 cases instad of 22^2 cases.
+	 *  To sum up we can work on 30 cases instad of 20^2 cases.
 	 *  
 	 */
 	
