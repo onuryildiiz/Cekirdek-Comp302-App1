@@ -58,6 +58,16 @@ public abstract class SpecialLokum extends Lokum {
 		return false;
 	}
 	
+	public static boolean isTimeBasedLokum(Lokum lokum) {
+		if (lokum.getName().equals(TimeBasedLokum.timeBasedCoconut().getName())
+				|| lokum.getName().equals(TimeBasedLokum.timeBasedHazelnut().getName())
+				|| lokum.getName().equals(TimeBasedLokum.timeBasedPistachio().getName())
+				|| lokum.getName().equals(TimeBasedLokum.timeBasedRose().getName())) {
+			return true;
+		}
+		return false;
+	}
+	
 	
 	public boolean repOK(){
 		Lokum lokum =new StripedLokum();

@@ -13,8 +13,8 @@ public class Lokum extends JLabel {
 
 	private static final long serialVersionUID = 1L;
 
-	private int XofLokum;
-	private int YofLokum;
+	private static int XofLokum;
+	private static int YofLokum;
 	public Icon LokumIcon;
 	public String LokumName;
 
@@ -26,12 +26,12 @@ public class Lokum extends JLabel {
 	public static Image loadImage(String path) throws IOException {
 
 		BufferedImage loadImage = ImageIO.read(Lokum.class.getResource(path));
-		// Image image = new Image[loadImage.getWidth()/ widht];
+
 
 		return loadImage;
 	}
 
-	public int getXofLokum() {
+	public static int getXofLokum() {
 		return XofLokum;
 	}
 
@@ -39,7 +39,7 @@ public class Lokum extends JLabel {
 		this.XofLokum = XofLokum;
 	}
 
-	public int getYofLokum() {
+	public static int getYofLokum() {
 		return YofLokum;
 	}
 
@@ -66,7 +66,8 @@ public class Lokum extends JLabel {
 	public static boolean isSpecial(Lokum lokum) {
 		if (StripedLokum.isStripedLokum(lokum)
 				|| WrappedLokum.isWrappedLokum(lokum)
-				|| ColorBomb.isColorBomb(lokum)) {
+				|| ColorBomb.isColorBomb(lokum)
+				|| TimeBasedLokum.isTimeBasedLokum(lokum)) {
 			return true;
 		}
 		return false;
@@ -76,51 +77,60 @@ public class Lokum extends JLabel {
 		if ((lokum1.getName().equals(BasicLokum.coconut().getName()) || 
 			 lokum1.getName().equals(StripedLokum.crossStripedCoconut().getName()) ||
 			 lokum1.getName().equals(StripedLokum.longitudinalStripedCoconut().getName()) ||
-		   	 lokum1.getName().equals(WrappedLokum.wrappedCoconut().getName()))
+		   	 lokum1.getName().equals(WrappedLokum.wrappedCoconut().getName()) ||
+		   	 lokum1.getName().equals(TimeBasedLokum.timeBasedCoconut().getName()))
 				&&
 			(lokum2.getName().equals(BasicLokum.coconut().getName()) ||
 			 lokum2.getName().equals(StripedLokum.crossStripedCoconut().getName()) ||
 			 lokum2.getName().equals(StripedLokum.longitudinalStripedCoconut().getName()) ||
-		   	 lokum2.getName().equals(WrappedLokum.wrappedCoconut().getName())))
+		   	 lokum2.getName().equals(WrappedLokum.wrappedCoconut().getName())) ||
+		   	 lokum2.getName().equals(TimeBasedLokum.timeBasedCoconut().getName()))
 			return true;
 		
 		if ((lokum1.getName().equals(BasicLokum.hazelnut().getName()) || 
 				 lokum1.getName().equals(StripedLokum.crossStripedHazelnut().getName()) ||
 				 lokum1.getName().equals(StripedLokum.longitudinalStripedHazelnut().getName()) ||
-			   	 lokum1.getName().equals(WrappedLokum.wrappedHazelnut().getName()))
+			   	 lokum1.getName().equals(WrappedLokum.wrappedHazelnut().getName()) ||
+			   	 lokum1.getName().equals(TimeBasedLokum.timeBasedHazelnut().getName()))
 					&&
 				(lokum2.getName().equals(BasicLokum.hazelnut().getName()) ||
 				 lokum2.getName().equals(StripedLokum.crossStripedHazelnut().getName()) ||
 				 lokum2.getName().equals(StripedLokum.longitudinalStripedHazelnut().getName()) ||
-			   	 lokum2.getName().equals(WrappedLokum.wrappedHazelnut().getName())))
+			   	 lokum2.getName().equals(WrappedLokum.wrappedHazelnut().getName())) ||
+			   	lokum2.getName().equals(TimeBasedLokum.timeBasedHazelnut().getName()))
 				return true;
 		
 		if ((lokum1.getName().equals(BasicLokum.pistachio().getName()) || 
 				 lokum1.getName().equals(StripedLokum.crossStripedPistachio().getName()) ||
 				 lokum1.getName().equals(StripedLokum.longitudinalStripedPistachio().getName()) ||
-			   	 lokum1.getName().equals(WrappedLokum.wrappedPistachio().getName()))
+			   	 lokum1.getName().equals(WrappedLokum.wrappedPistachio().getName()) ||
+			   	 lokum1.getName().equals(TimeBasedLokum.timeBasedPistachio().getName()))
 					&&
 				(lokum2.getName().equals(BasicLokum.pistachio().getName()) ||
 				 lokum2.getName().equals(StripedLokum.crossStripedPistachio().getName()) ||
 				 lokum2.getName().equals(StripedLokum.longitudinalStripedPistachio().getName()) ||
-			   	 lokum2.getName().equals(WrappedLokum.wrappedPistachio().getName())))
+			   	 lokum2.getName().equals(WrappedLokum.wrappedPistachio().getName())) ||
+			   	 lokum2.getName().equals(TimeBasedLokum.timeBasedPistachio().getName()))
 				return true;
 		
 		if ((lokum1.getName().equals(BasicLokum.rose().getName()) || 
 				 lokum1.getName().equals(StripedLokum.crossStripedRose().getName()) ||
 				 lokum1.getName().equals(StripedLokum.longitudinalStripedRose().getName()) ||
-			   	 lokum1.getName().equals(WrappedLokum.wrappedRose().getName()))
+			   	 lokum1.getName().equals(WrappedLokum.wrappedRose().getName()) ||
+			   	 lokum1.getName().equals(TimeBasedLokum.timeBasedRose().getName()))
 					&&
 				(lokum2.getName().equals(BasicLokum.rose().getName()) ||
 				 lokum2.getName().equals(StripedLokum.crossStripedRose().getName()) ||
 				 lokum2.getName().equals(StripedLokum.longitudinalStripedRose().getName()) ||
-			   	 lokum2.getName().equals(WrappedLokum.wrappedRose().getName())))
+			   	 lokum2.getName().equals(WrappedLokum.wrappedRose().getName())) ||
+			   	 lokum2.getName().equals(TimeBasedLokum.timeBasedRose().getName()))
 				return true;
 		
 		
 		
 		return false;
 	}
+	
 	
 	public static Lokum findSameTypedLokums(Lokum lokum1){
 		for (int i = 0; i < GameBoard.row; i++) {
