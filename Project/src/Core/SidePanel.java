@@ -103,6 +103,8 @@ public class SidePanel extends JPanel {
 		g.drawString("Target Score: " + getTargetScore(), 4, 90);
 		g.drawString("Level: " + level, 4, 130);
 		g.drawString("Moves Left: " + moveCount, 4, 170);
+		if(levelIsTimeBased())
+			g.drawString("Remaining Time: " + "ece", 4, 210);
 		g.drawString("Score: " + currentScore * level, 4, 210);
 		g.setFont(new Font("Jokerman", Font.BOLD, 26));
 		// g.setColor(new Color(128, 21, 128));
