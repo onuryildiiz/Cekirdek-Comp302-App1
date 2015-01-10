@@ -75,7 +75,6 @@ public class GameRules extends JFrame {
                 slide();
                 SidePanel.time--;
                 
-                
             }
             
         });
@@ -159,7 +158,7 @@ public class GameRules extends JFrame {
     
     public static boolean checkCoordinateLokums(Lokum selectedLokum1,
                                                Lokum selectedLokum2) {
-    	
+        
         coordinateChecker = false;
         
       
@@ -289,6 +288,15 @@ public class GameRules extends JFrame {
                                          GameBoard.lokumArray[i][j + 1]) == true
                     && Lokum.hasSameRoot(GameBoard.lokumArray[i][j],
                                          GameBoard.lokumArray[i][j + 2]) == true) {
+                	
+                	 if(GameBoard.lokumArray[i][j+2].getName()!="ali")
+                         explode(GameBoard.lokumArray[i][j + 2]);
+                     if(GameBoard.lokumArray[i][j+1].getName()!="ali")
+                         explode(GameBoard.lokumArray[i][j + 1]);
+                     if(GameBoard.lokumArray[i-1][j].getName()!="ali")
+                         explode(GameBoard.lokumArray[i - 1][j]);
+                     if(GameBoard.lokumArray[i-2][j].getName()!="ali")
+                         explode(GameBoard.lokumArray[i - 2][j]);
                     
                     if (GameBoard.lokumArray[i][j].getName() == "basicRose") {
                         GameBoard.lokumArray[i][j].setName(WrappedLokum
@@ -314,14 +322,7 @@ public class GameRules extends JFrame {
                                                            .wrappedCoconut().getIcon());
                         
                     }
-                    if(GameBoard.lokumArray[i][j+2].getName()!="ali")
-                        explode(GameBoard.lokumArray[i][j + 2]);
-                    if(GameBoard.lokumArray[i][j+1].getName()!="ali")
-                        explode(GameBoard.lokumArray[i][j + 1]);
-                    if(GameBoard.lokumArray[i-1][j].getName()!="ali")
-                        explode(GameBoard.lokumArray[i - 1][j]);
-                    if(GameBoard.lokumArray[i-2][j].getName()!="ali")
-                        explode(GameBoard.lokumArray[i - 2][j]);
+                   
                     isDestroyed = true;
                     gereksizIsDestroyed = true;
                     
@@ -350,6 +351,15 @@ public class GameRules extends JFrame {
                                          GameBoard.lokumArray[i][j + 1]) == true
                     && Lokum.hasSameRoot(GameBoard.lokumArray[i][j],
                                          GameBoard.lokumArray[i][j + 2]) == true) {
+                	
+                	  if(GameBoard.lokumArray[i][j+2].getName()!="ali")
+                          explode(GameBoard.lokumArray[i][j + 2]);
+                      if(GameBoard.lokumArray[i][j+2].getName()!="ali")
+                          explode(GameBoard.lokumArray[i][j + 1]);
+                      if(GameBoard.lokumArray[i+1][j].getName()!="ali")
+                          explode(GameBoard.lokumArray[i + 1][j]);
+                      if(GameBoard.lokumArray[i+2][j].getName()!="ali")
+                          explode(GameBoard.lokumArray[i + 2][j]);
                     
                     if (GameBoard.lokumArray[i][j].getName() == "basicRose") {
                         GameBoard.lokumArray[i][j].setName(WrappedLokum
@@ -375,14 +385,7 @@ public class GameRules extends JFrame {
                                                            .wrappedCoconut().getIcon());
                         
                     }
-                    if(GameBoard.lokumArray[i][j+2].getName()!="ali")
-                        explode(GameBoard.lokumArray[i][j + 2]);
-                    if(GameBoard.lokumArray[i][j+2].getName()!="ali")
-                        explode(GameBoard.lokumArray[i][j + 1]);
-                    if(GameBoard.lokumArray[i+1][j].getName()!="ali")
-                        explode(GameBoard.lokumArray[i + 1][j]);
-                    if(GameBoard.lokumArray[i+2][j].getName()!="ali")
-                        explode(GameBoard.lokumArray[i + 2][j]);
+                  
                     isDestroyed = true;
                     gereksizIsDestroyed = true;
                     
@@ -412,6 +415,16 @@ public class GameRules extends JFrame {
                                          GameBoard.lokumArray[i][j - 1]) == true
                     && Lokum.hasSameRoot(GameBoard.lokumArray[i][j],
                                          GameBoard.lokumArray[i][j - 2]) == true) {
+                	
+                	   if(GameBoard.lokumArray[i][j-2].getName()!="ali")
+                           explode(GameBoard.lokumArray[i][j - 2]);
+                       if(GameBoard.lokumArray[i][j-1].getName()!="ali")
+                           explode(GameBoard.lokumArray[i][j - 1]);
+                       if(GameBoard.lokumArray[i+1][j].getName()!="ali")
+                           explode(GameBoard.lokumArray[i + 1][j]);
+                       if(GameBoard.lokumArray[i+2][j].getName()!="ali")
+                           explode(GameBoard.lokumArray[i + 2][j]);
+                       
                     
                     if (GameBoard.lokumArray[i][j].getName() == "Rose") {
                         GameBoard.lokumArray[i][j].setName(WrappedLokum
@@ -437,15 +450,7 @@ public class GameRules extends JFrame {
                                                            .wrappedCoconut().getIcon());
                         
                     }
-                    if(GameBoard.lokumArray[i][j-2].getName()!="ali")
-                        explode(GameBoard.lokumArray[i][j - 2]);
-                    if(GameBoard.lokumArray[i][j-1].getName()!="ali")
-                        explode(GameBoard.lokumArray[i][j - 1]);
-                    if(GameBoard.lokumArray[i+1][j].getName()!="ali")
-                        explode(GameBoard.lokumArray[i + 1][j]);
-                    if(GameBoard.lokumArray[i+2][j].getName()!="ali")
-                        explode(GameBoard.lokumArray[i + 2][j]);
-                    
+                 
                     isDestroyed = true;
                     gereksizIsDestroyed = true;
                     
@@ -475,6 +480,15 @@ public class GameRules extends JFrame {
                                          GameBoard.lokumArray[i][j - 1]) == true
                     && Lokum.hasSameRoot(GameBoard.lokumArray[i][j],
                                          GameBoard.lokumArray[i][j - 2]) == true) {
+                	
+                	if(GameBoard.lokumArray[i][j-2].getName()!="ali")
+                        explode(GameBoard.lokumArray[i][j - 2]);
+                    if(GameBoard.lokumArray[i][j-1].getName()!="ali")
+                        explode(GameBoard.lokumArray[i][j - 1]);
+                    if(GameBoard.lokumArray[i-1][j].getName()!="ali")
+                        explode(GameBoard.lokumArray[i - 1][j]);
+                    if(GameBoard.lokumArray[i-2][j].getName()!="ali")
+                        explode(GameBoard.lokumArray[i - 2][j]);
                     
                     if (GameBoard.lokumArray[i][j].getName() == "basicRose") {
                         GameBoard.lokumArray[i][j].setName(WrappedLokum
@@ -500,14 +514,7 @@ public class GameRules extends JFrame {
                                                            .wrappedCoconut().getIcon());
                         
                     }
-                    if(GameBoard.lokumArray[i][j-2].getName()!="ali")
-                        explode(GameBoard.lokumArray[i][j - 2]);
-                    if(GameBoard.lokumArray[i][j-1].getName()!="ali")
-                        explode(GameBoard.lokumArray[i][j - 1]);
-                    if(GameBoard.lokumArray[i-1][j].getName()!="ali")
-                        explode(GameBoard.lokumArray[i - 1][j]);
-                    if(GameBoard.lokumArray[i-2][j].getName()!="ali")
-                        explode(GameBoard.lokumArray[i - 2][j]);
+                    
                     isDestroyed = true;
                     gereksizIsDestroyed = true;
                     
@@ -537,6 +544,15 @@ public class GameRules extends JFrame {
                                          GameBoard.lokumArray[i - 1][j]) == true
                     && Lokum.hasSameRoot(GameBoard.lokumArray[i][j],
                                          GameBoard.lokumArray[i + 1][j]) == true) {
+                	
+                	if(GameBoard.lokumArray[i][j+2].getName()!="ali")
+                        explode(GameBoard.lokumArray[i][j + 2]);
+                    if(GameBoard.lokumArray[i][j+1].getName()!="ali")
+                        explode(GameBoard.lokumArray[i][j + 1]);
+                    if(GameBoard.lokumArray[i-1][j].getName()!="ali")
+                        explode(GameBoard.lokumArray[i - 1][j]);
+                    if(GameBoard.lokumArray[i+1][j].getName()!="ali")
+                        explode(GameBoard.lokumArray[i + 1][j]);
                     
                     if (GameBoard.lokumArray[i][j].getName() == "basicRose") {
                         GameBoard.lokumArray[i][j].setName(WrappedLokum
@@ -562,14 +578,7 @@ public class GameRules extends JFrame {
                                                            .wrappedCoconut().getIcon());
                         
                     }
-                    if(GameBoard.lokumArray[i][j+2].getName()!="ali")
-                        explode(GameBoard.lokumArray[i][j + 2]);
-                    if(GameBoard.lokumArray[i][j+1].getName()!="ali")
-                        explode(GameBoard.lokumArray[i][j + 1]);
-                    if(GameBoard.lokumArray[i-1][j].getName()!="ali")
-                        explode(GameBoard.lokumArray[i - 1][j]);
-                    if(GameBoard.lokumArray[i+1][j].getName()!="ali")
-                        explode(GameBoard.lokumArray[i + 1][j]);
+                    
                     isDestroyed = true;
                     gereksizIsDestroyed = true;
                     
@@ -599,6 +608,15 @@ public class GameRules extends JFrame {
                                          GameBoard.lokumArray[i][j - 1]) == true
                     && Lokum.hasSameRoot(GameBoard.lokumArray[i][j],
                                          GameBoard.lokumArray[i][j - 2]) == true) {
+                	
+                	  if(GameBoard.lokumArray[i][j - 2].getName()!="ali")
+                          explode(GameBoard.lokumArray[i][j - 2]);
+                      if(GameBoard.lokumArray[i][j - 1].getName()!="ali")
+                          explode(GameBoard.lokumArray[i][j - 1]);
+                      if(GameBoard.lokumArray[i-1][j].getName()!="ali")
+                          explode(GameBoard.lokumArray[i - 1][j]);
+                      if(GameBoard.lokumArray[i+1][j].getName()!="ali")
+                          explode(GameBoard.lokumArray[i + 1][j]);
                     
                     if (GameBoard.lokumArray[i][j].getName() == "basicRose") {
                         GameBoard.lokumArray[i][j].setName(WrappedLokum
@@ -624,14 +642,7 @@ public class GameRules extends JFrame {
                                                            .wrappedCoconut().getIcon());
                         
                     }
-                    if(GameBoard.lokumArray[i][j - 2].getName()!="ali")
-                        explode(GameBoard.lokumArray[i][j - 2]);
-                    if(GameBoard.lokumArray[i][j - 1].getName()!="ali")
-                        explode(GameBoard.lokumArray[i][j - 1]);
-                    if(GameBoard.lokumArray[i-1][j].getName()!="ali")
-                        explode(GameBoard.lokumArray[i - 1][j]);
-                    if(GameBoard.lokumArray[i+1][j].getName()!="ali")
-                        explode(GameBoard.lokumArray[i + 1][j]);
+                  
                     
                     isDestroyed = true;
                     gereksizIsDestroyed = true;
@@ -662,6 +673,15 @@ public class GameRules extends JFrame {
                                          GameBoard.lokumArray[i][j - 1]) == true
                     && Lokum.hasSameRoot(GameBoard.lokumArray[i][j],
                                          GameBoard.lokumArray[i][j + 1]) == true) {
+                	
+                    if(GameBoard.lokumArray[i+1][j].getName()!="ali")
+                        explode(GameBoard.lokumArray[i + 1][j]);
+                    if(GameBoard.lokumArray[i+2][j].getName()!="ali")
+                        explode(GameBoard.lokumArray[i + 2][j]);
+                    if(GameBoard.lokumArray[i][j + 1].getName()!="ali")
+                        explode(GameBoard.lokumArray[i][j + 1]);
+                    if(GameBoard.lokumArray[i][j - 1].getName()!="ali")
+                        explode(GameBoard.lokumArray[i][j - 1]);
                     
                     if (GameBoard.lokumArray[i][j].getName() == "basicRose") {
                         GameBoard.lokumArray[i][j].setName(WrappedLokum
@@ -687,14 +707,7 @@ public class GameRules extends JFrame {
                                                            .wrappedCoconut().getIcon());
                         
                     }
-                    if(GameBoard.lokumArray[i+1][j].getName()!="ali")
-                        explode(GameBoard.lokumArray[i + 1][j]);
-                    if(GameBoard.lokumArray[i+2][j].getName()!="ali")
-                        explode(GameBoard.lokumArray[i + 2][j]);
-                    if(GameBoard.lokumArray[i][j + 1].getName()!="ali")
-                        explode(GameBoard.lokumArray[i][j + 1]);
-                    if(GameBoard.lokumArray[i][j - 1].getName()!="ali")
-                        explode(GameBoard.lokumArray[i][j - 1]);
+              
                     isDestroyed = true;
                     gereksizIsDestroyed = true;
                     
@@ -724,6 +737,15 @@ public class GameRules extends JFrame {
                                          GameBoard.lokumArray[i][j - 1]) == true
                     && Lokum.hasSameRoot(GameBoard.lokumArray[i][j],
                                          GameBoard.lokumArray[i][j + 1]) == true) {
+                	
+                    if(GameBoard.lokumArray[i][j - 1].getName()!="ali")
+                        explode(GameBoard.lokumArray[i][j - 1]);
+                    if(GameBoard.lokumArray[i][j + 1].getName()!="ali")
+                        explode(GameBoard.lokumArray[i][j + 1]);
+                    if(GameBoard.lokumArray[i-2][j].getName()!="ali")
+                        explode(GameBoard.lokumArray[i - 1][j]);
+                    if(GameBoard.lokumArray[i-2][j].getName()!="ali")
+                        explode(GameBoard.lokumArray[i - 2][j]);
                     
                     if (GameBoard.lokumArray[i][j].getName() == "basicRose") {
                         GameBoard.lokumArray[i][j].setName(WrappedLokum
@@ -750,14 +772,7 @@ public class GameRules extends JFrame {
                         
                     }
                     
-                    if(GameBoard.lokumArray[i][j - 1].getName()!="ali")
-                        explode(GameBoard.lokumArray[i][j - 1]);
-                    if(GameBoard.lokumArray[i][j + 1].getName()!="ali")
-                        explode(GameBoard.lokumArray[i][j + 1]);
-                    if(GameBoard.lokumArray[i-2][j].getName()!="ali")
-                        explode(GameBoard.lokumArray[i - 1][j]);
-                    if(GameBoard.lokumArray[i-2][j].getName()!="ali")
-                        explode(GameBoard.lokumArray[i - 2][j]);
+             
                     
                     isDestroyed = true;
                     gereksizIsDestroyed = true;
@@ -820,20 +835,22 @@ public class GameRules extends JFrame {
                                          GameBoard.lokumArray[k + 2][l]) == true
                     && Lokum.hasSameRoot(GameBoard.lokumArray[k][l],
                                          GameBoard.lokumArray[k - 2][l]) == true) {
+                	
+                	  if(GameBoard.lokumArray[k-1][l].getName()!="ali")
+                          explode(GameBoard.lokumArray[k - 1][l]);
+                      if(GameBoard.lokumArray[k+1][l].getName()!="ali")
+                          explode(GameBoard.lokumArray[k + 1][l]);
+                      if(GameBoard.lokumArray[k+2][l].getName()!="ali")
+                          explode(GameBoard.lokumArray[k + 2][l]);
+                      if(GameBoard.lokumArray[k-2][l].getName()!="ali")
+                          explode(GameBoard.lokumArray[k - 2][l]);
                     
                     GameBoard.lokumArray[k][l].setName(ColorBomb
                                                        .colorBomb().getName());
                     GameBoard.lokumArray[k][l].setIcon(ColorBomb.colorBomb()
                                                        .getIcon());
                     
-                    if(GameBoard.lokumArray[k-1][l].getName()!="ali")
-                        explode(GameBoard.lokumArray[k - 1][l]);
-                    if(GameBoard.lokumArray[k+1][l].getName()!="ali")
-                        explode(GameBoard.lokumArray[k + 1][l]);
-                    if(GameBoard.lokumArray[k+2][l].getName()!="ali")
-                        explode(GameBoard.lokumArray[k + 2][l]);
-                    if(GameBoard.lokumArray[k-2][l].getName()!="ali")
-                        explode(GameBoard.lokumArray[k - 2][l]);
+                  
                     
                     
                     
@@ -864,19 +881,20 @@ public class GameRules extends JFrame {
                                          GameBoard.lokumArray[j][i - 1]) == true
                     && Lokum.hasSameRoot(GameBoard.lokumArray[j][i],
                                          GameBoard.lokumArray[j][i - 2]) == true) {
+                	   if(GameBoard.lokumArray[j][i + 1].getName()!="ali")
+                           explode(GameBoard.lokumArray[j][i + 1]);
+                       if(GameBoard.lokumArray[j][i - 1].getName()!="ali")
+                           explode(GameBoard.lokumArray[j][i - 1]);
+                       if(GameBoard.lokumArray[j][i + 1].getName()!="ali")
+                           explode(GameBoard.lokumArray[j][i + 2]);
+                       if(GameBoard.lokumArray[j][i - 2].getName()!="ali")
+                           explode(GameBoard.lokumArray[j][i - 2]);
                     
                     GameBoard.lokumArray[j][i].setName(ColorBomb.colorBomb()
                                                        .getName());
                     GameBoard.lokumArray[j][i].setIcon(ColorBomb.colorBomb()
                                                        .getIcon());
-                    if(GameBoard.lokumArray[j][i + 1].getName()!="ali")
-                        explode(GameBoard.lokumArray[j][i + 1]);
-                    if(GameBoard.lokumArray[j][i - 1].getName()!="ali")
-                        explode(GameBoard.lokumArray[j][i - 1]);
-                    if(GameBoard.lokumArray[j][i + 1].getName()!="ali")
-                        explode(GameBoard.lokumArray[j][i + 2]);
-                    if(GameBoard.lokumArray[j][i - 2].getName()!="ali")
-                        explode(GameBoard.lokumArray[j][i - 2]);
+                 
                     isDestroyed = true;
                     gereksizIsDestroyed = true;
                 }
@@ -902,6 +920,14 @@ public class GameRules extends JFrame {
                                          GameBoard.lokumArray[k - 1][l]) == true
                     && Lokum.hasSameRoot(GameBoard.lokumArray[k][l],
                                          GameBoard.lokumArray[k + 2][l]) == true) {
+                  
+                	if(GameBoard.lokumArray[k-1][l].getName()!="ali")
+                        explode(GameBoard.lokumArray[k - 1][l]);
+                    if(GameBoard.lokumArray[k+1][l].getName()!="ali")
+                        explode(GameBoard.lokumArray[k + 1][l]);
+                    if(GameBoard.lokumArray[k+2][l].getName()!="ali")
+                        explode(GameBoard.lokumArray[k + 2][l]);
+                    
                     
                     if (GameBoard.lokumArray[k][l].getName() == "basicRose") {
                         GameBoard.lokumArray[k][l].setName(StripedLokum
@@ -929,13 +955,7 @@ public class GameRules extends JFrame {
                                                            .longitudinalStripedHazelnut().getIcon());
                     }
 
-                    if(GameBoard.lokumArray[k-1][l].getName()!="ali")
-                        explode(GameBoard.lokumArray[k - 1][l]);
-                    if(GameBoard.lokumArray[k+1][l].getName()!="ali")
-                        explode(GameBoard.lokumArray[k + 1][l]);
-                    if(GameBoard.lokumArray[k+2][l].getName()!="ali")
-                        explode(GameBoard.lokumArray[k + 2][l]);
-                    
+                
                     isDestroyed = true;
                     gereksizIsDestroyed = true;
                     
@@ -961,6 +981,14 @@ public class GameRules extends JFrame {
                                          GameBoard.lokumArray[j][i + 2]) == true
                     && Lokum.hasSameRoot(GameBoard.lokumArray[j][i],
                                          GameBoard.lokumArray[j][i - 1]) == true) {
+                	  
+                    if(GameBoard.lokumArray[j][i + 1].getName()!="ali")
+                        explode(GameBoard.lokumArray[j][i + 1]);
+                    if(GameBoard.lokumArray[j][i - 1].getName()!="ali")
+                        explode(GameBoard.lokumArray[j][i - 1]);
+                    if(GameBoard.lokumArray[j][i + 2].getName()!="ali")
+                        explode(GameBoard.lokumArray[j][i + 2]);
+
                     
                     if (GameBoard.lokumArray[j][i].getName() == "Rose") {
                         GameBoard.lokumArray[j][i].setName(StripedLokum
@@ -987,14 +1015,7 @@ public class GameRules extends JFrame {
                         GameBoard.lokumArray[j][i].setIcon(StripedLokum
                                                            .crossStripedHazelnut().getIcon());
                     }
-                    
-                    if(GameBoard.lokumArray[j][i + 1].getName()!="ali")
-                        explode(GameBoard.lokumArray[j][i + 1]);
-                    if(GameBoard.lokumArray[j][i - 1].getName()!="ali")
-                        explode(GameBoard.lokumArray[j][i - 1]);
-                    if(GameBoard.lokumArray[j][i + 2].getName()!="ali")
-                        explode(GameBoard.lokumArray[j][i + 2]);
-                    
+                                      
                     isDestroyed = true;
                     gereksizIsDestroyed = true;
                     System.out.println("is destroyed:" + isDestroyed);
@@ -1389,6 +1410,7 @@ public class GameRules extends JFrame {
 
 		}
 
+		
 		}
 
 		}
@@ -2269,9 +2291,10 @@ public class GameRules extends JFrame {
                 j=7;
             for (int k = i - 2; k <= i + 2; k++) {
                 for (int l = j - 2; l <= j + 2; l++) {
-                    if (GameBoard.lokumArray[k][l].getIcon() != null)
-                        Lokum.transformLokums(GameBoard.lokumArray[k][l], lokum1);
+                    if (GameBoard.lokumArray[k][l].getName() != "ali"){
+                    	
                     explode(GameBoard.lokumArray[k][l]);
+                    }
                 }
             }
             int k = lokum1.getXofLokum();
