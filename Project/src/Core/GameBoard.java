@@ -349,7 +349,8 @@ public final class GameBoard extends JPanel {
 	public static Lokum randomLokum() {
 
 		if (SidePanel.levelIsTimeBased()) {
-			int randomx = (int) (Math.random() * 4 + 1);
+			System.out.println("amýný sikim");
+			int randomx = (int) (Math.random() * 5 + 1);
 			if (randomx == 1) {
 
 				ranLokum = BasicLokum.pistachio();
@@ -368,16 +369,16 @@ public final class GameBoard extends JPanel {
 				int randomit = (int) (Math.random() * 4 + 1);
 
 				if (randomit == 1) {
-					// ranLokum = TimeBasedLokum.timeBasedPistachio();
+					 ranLokum = TimeBasedLokum.timeBasedPistachio();
 
 				} else if (randomit == 2) {
-					// ranLokum = TimeBasedLokum.timeBasedCoconut();
+					 ranLokum = TimeBasedLokum.timeBasedCoconut();
 
 				} else if (randomit == 3) {
-					// ranLokum = TimeBasedLokum.timeBasedRose();
+					 ranLokum = TimeBasedLokum.timeBasedRose();
 
 				} else if (randomit == 4) {
-					// ranLokum = TimeBasedLokum.timeBasedHazelnut();
+					 ranLokum = TimeBasedLokum.timeBasedHazelnut();
 
 				}
 			}

@@ -126,7 +126,7 @@ public class SidePanel extends JPanel {
 	 */
 
 	public static boolean levelIsTimeBased() {
-		if (level%3==2) {
+		if (level%3==1) {
 			return true;			
 		} else{	
 			return false;			

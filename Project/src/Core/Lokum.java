@@ -13,8 +13,8 @@ public class Lokum extends JLabel {
 
 	private static final long serialVersionUID = 1L;
 
-	private static int XofLokum;
-	private static int YofLokum;
+	private  int XofLokum;
+	private  int YofLokum;
 	public Icon LokumIcon;
 	public String LokumName;
 
@@ -31,7 +31,7 @@ public class Lokum extends JLabel {
 		return loadImage;
 	}
 
-	public static int getXofLokum() {
+	public  int getXofLokum() {
 		return XofLokum;
 	}
 
@@ -39,7 +39,7 @@ public class Lokum extends JLabel {
 		this.XofLokum = XofLokum;
 	}
 
-	public static int getYofLokum() {
+	public  int getYofLokum() {
 		return YofLokum;
 	}
 
