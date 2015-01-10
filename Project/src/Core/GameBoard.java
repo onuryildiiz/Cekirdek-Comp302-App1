@@ -349,7 +349,7 @@ public final class GameBoard extends JPanel {
 	public static Lokum randomLokum() {
 
 		if (SidePanel.levelIsTimeBased()) {
-			System.out.println("amýný sikim");
+			System.out.println("Time Based Level");
 			int randomx = (int) (Math.random() * 5 + 1);
 			if (randomx == 1) {
 

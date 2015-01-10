@@ -16,6 +16,7 @@ public class SidePanel extends JPanel {
 	public static int currentScore = 0;
 	public static int moveCount = 50;
 	public static int level = 1;
+	public static int time = 180;
 	public static GameRules GameController;
 
 	/**
@@ -118,12 +119,13 @@ public class SidePanel extends JPanel {
 
 		g.setColor(Color.white);
 		g.setFont(new Font("Jokerman", Font.BOLD, 20));
+		int mins=time/60;
+		if(levelIsTimeBased())
+			g.drawString("Time: " + mins + ":"+ (time-mins*60) , 4, 30);
 		g.drawString("Target Score: " + getTargetScore(), 4, 70);
 		g.drawString("Level: " + level, 4, 110);
-		g.drawString("Moves Left: " + moveCount, 4, 150);
-		if(levelIsTimeBased())
-			g.drawString("Remaining Time: " + "ece", 4, 190);
-		g.drawString("Score: " + currentScore * level, 4, 230);
+		g.drawString("Moves Left: " + moveCount, 4, 150);	
+		g.drawString("Score: " + currentScore * level, 4, 190);
 		g.setFont(new Font("Jokerman", Font.BOLD, 26));
 		// g.setColor(new Color(128, 21, 128));
 		// g.drawString("Made by Cekirdek", 4, 550);

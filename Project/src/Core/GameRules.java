@@ -57,6 +57,7 @@ public class GameRules extends JFrame {
         start();
         destroy();
         SidePanel.currentScore=0;
+        SidePanel.time=180;
     }
     
     static javax.swing.Timer t;
@@ -72,6 +73,7 @@ public class GameRules extends JFrame {
                 levelPassed();
                 t.toString();
                 slide();
+                SidePanel.time--;
                 
             }
             
@@ -1183,7 +1185,7 @@ public class GameRules extends JFrame {
 		else if(SpecialLokum.isTimeBasedLokum(lokum1)){
 			lokum1.setName("ali");
 			lokum1.setIcon(null);
-			//XMLObject.time=XMLObject.time+5;
+			SidePanel.time=SidePanel.time+5;
 			////TIMER EKLENECEK 5 SANIYE ARTTIR
 		}
 		else if (SpecialLokum.isCrossStripedLokum(lokum1)) {
