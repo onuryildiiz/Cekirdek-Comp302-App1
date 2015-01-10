@@ -75,6 +75,7 @@ public class GameRules extends JFrame {
                 slide();
                 SidePanel.time--;
                 
+                
             }
             
         });
@@ -99,7 +100,7 @@ public class GameRules extends JFrame {
      * @Modifies:
      */
     public static void swapLokums(Lokum selectedLokum1, Lokum selectedLokum2) {
-        if (checkCoordinateLokums(selectedLokum1, selectedLokum2) == true) {
+        if (SidePanel.swapButtonEnabled || checkCoordinateLokums(selectedLokum1, selectedLokum2) == true) {
             switchLokums(selectedLokum1, selectedLokum2);
             SidePanel.moveCount--;			                           
         	System.out.println(SidePanel.moveCount);
@@ -108,7 +109,7 @@ public class GameRules extends JFrame {
                 
             }
             
-            
+            SidePanel.swapButtonEnabled =false;
             destroy();
          
             
@@ -158,7 +159,7 @@ public class GameRules extends JFrame {
     
     public static boolean checkCoordinateLokums(Lokum selectedLokum1,
                                                Lokum selectedLokum2) {
-        
+    	
         coordinateChecker = false;
         
       

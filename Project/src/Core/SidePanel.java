@@ -18,6 +18,7 @@ public class SidePanel extends JPanel {
 	public static int level = 1;
 	public static int time = 180;
 	public static GameRules GameController;
+	public static boolean swapButtonEnabled = false;
 
 	/**
 	 * 
@@ -48,7 +49,8 @@ public class SidePanel extends JPanel {
 		specialSwapButton.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent m) {
-			
+				swapButtonEnabled = true;
+				
 			}
 		});
 
