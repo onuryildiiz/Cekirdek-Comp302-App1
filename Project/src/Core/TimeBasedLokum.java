@@ -50,13 +50,6 @@ public class TimeBasedLokum extends SpecialLokum{
 
 		return coconut;
 	}
-	/**
-	 * 
-	 * @requires a wrapped lokum and two or more basic lokums, which are the same root with the wrapped lokum, comes into the same row
-	 * @ensures all the lokums which are the neighbors of the wrapped lokum destroy.
-	 * @modifies gameBoard, the board brings new lokums instead of the destroyed ones.
-	 */
-
 	
 	
 
