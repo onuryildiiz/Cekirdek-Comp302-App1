@@ -32,6 +32,24 @@ public class SidePanel extends JPanel {
 		GameController = GameRules;
 
 		this.setLayout(null);
+		
+		JButton specialSwapButton = new JButton("Special Swap");
+
+		specialSwapButton.setOpaque(true);
+		specialSwapButton.setVisible(true);
+		specialSwapButton.setBackground(new Color(125, 150, 150));
+		specialSwapButton.setForeground(new Color(128, 21, 128));
+		specialSwapButton.setFont(new Font("Jokerman", Font.BOLD, 30));
+
+		specialSwapButton.setBounds(15, 250, 250, 75);
+		this.add(specialSwapButton);
+
+		specialSwapButton.addActionListener(new ActionListener() {
+
+			public void actionPerformed(ActionEvent m) {
+			
+			}
+		});
 
 		JButton saveButton = new JButton("Save");
 
@@ -41,7 +59,7 @@ public class SidePanel extends JPanel {
 		saveButton.setForeground(new Color(128, 21, 128));
 		saveButton.setFont(new Font("Jokerman", Font.BOLD, 30));
 
-		saveButton.setBounds(15, 300, 250, 75);
+		saveButton.setBounds(15, 327, 250, 75);
 		this.add(saveButton);
 
 		saveButton.addActionListener(new ActionListener() {
@@ -61,7 +79,7 @@ public class SidePanel extends JPanel {
 		retryButton.setForeground(new Color(128, 21, 128));
 		retryButton.setFont(new Font("Jokerman", Font.BOLD, 30));
 
-		retryButton.setBounds(15, 375, 250, 75);
+		retryButton.setBounds(15, 400, 250, 75);
 		this.add(retryButton);
 
 		retryButton.addActionListener(new ActionListener() {
@@ -78,7 +96,7 @@ public class SidePanel extends JPanel {
 		quitButton.setForeground(new Color(128, 21, 128));
 		quitButton.setFont(new Font("Jokerman", Font.BOLD, 30));
 
-		quitButton.setBounds(15, 450, 250, 75);
+		quitButton.setBounds(15, 475, 250, 75);
 		this.add(quitButton);
 
 		quitButton.addActionListener(new ActionListener() {
@@ -100,12 +118,12 @@ public class SidePanel extends JPanel {
 
 		g.setColor(Color.white);
 		g.setFont(new Font("Jokerman", Font.BOLD, 20));
-		g.drawString("Target Score: " + getTargetScore(), 4, 90);
-		g.drawString("Level: " + level, 4, 130);
-		g.drawString("Moves Left: " + moveCount, 4, 170);
+		g.drawString("Target Score: " + getTargetScore(), 4, 70);
+		g.drawString("Level: " + level, 4, 110);
+		g.drawString("Moves Left: " + moveCount, 4, 150);
 		if(levelIsTimeBased())
-			g.drawString("Remaining Time: " + "ece", 4, 210);
-		g.drawString("Score: " + currentScore * level, 4, 210);
+			g.drawString("Remaining Time: " + "ece", 4, 190);
+		g.drawString("Score: " + currentScore * level, 4, 230);
 		g.setFont(new Font("Jokerman", Font.BOLD, 26));
 		// g.setColor(new Color(128, 21, 128));
 		// g.drawString("Made by Cekirdek", 4, 550);
