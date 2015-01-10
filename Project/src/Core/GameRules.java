@@ -1179,7 +1179,14 @@ public class GameRules extends JFrame {
 			lokum1.setName("ali");
 			lokum1.setIcon(null);
 
-		} else if (SpecialLokum.isCrossStripedLokum(lokum1)) {
+		} 
+		else if(SpecialLokum.isTimeBasedLokum(lokum1)){
+			lokum1.setName("ali");
+			lokum1.setIcon(null);
+			XMLObject.time=XMLObject.time+5;
+			////TIMER EKLENECEK 5 SANIYE ARTTIR
+		}
+		else if (SpecialLokum.isCrossStripedLokum(lokum1)) {
 			
 
 			int m = lokum1.getYofLokum();
