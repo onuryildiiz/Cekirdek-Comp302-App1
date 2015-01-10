@@ -7,23 +7,6 @@ import java.io.IOException;
 
 import javax.swing.*;
 
-//import java.io.File;
-//import javax.xml.parsers.DocumentBuilder;
-//import javax.xml.parsers.DocumentBuilderFactory;
-//import javax.xml.parsers.ParserConfigurationException;
-//import javax.xml.transform.Transformer;
-//import javax.xml.transform.TransformerException;
-//import javax.xml.transform.TransformerFactory;
-//import javax.xml.transform.dom.DOMSource;
-//import javax.xml.transform.stream.StreamResult;
-// 
-//import org.w3c.dom.Attr;
-//import org.w3c.dom.Document;
-//import org.w3c.dom.Element;
-
-
-
-
 public class SidePanel extends JPanel {
 
 	/**
@@ -32,10 +15,9 @@ public class SidePanel extends JPanel {
 	private static final long serialVersionUID = 1L;
 	public static int currentScore = 0;
 	public static int moveCount = 50;
-	public static int level=1;
+	public static int level = 1;
 	public static GameRules GameController;
 
-	
 	/**
 	 * 
 	 * @param GameRules
@@ -48,82 +30,64 @@ public class SidePanel extends JPanel {
 		setPreferredSize(new Dimension(275, 600));
 		setBackground(new Color(125, 150, 150));
 		GameController = GameRules;
-		
-		
+
 		this.setLayout(null);
-		
+
 		JButton saveButton = new JButton("Save");
-		
+
 		saveButton.setOpaque(true);
 		saveButton.setVisible(true);
 		saveButton.setBackground(new Color(125, 150, 150));
 		saveButton.setForeground(new Color(128, 21, 128));
 		saveButton.setFont(new Font("Jokerman", Font.BOLD, 30));
-		
-		saveButton.setBounds(15,300,250,75);
+
+		saveButton.setBounds(15, 300, 250, 75);
 		this.add(saveButton);
-	
+
 		saveButton.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent m) {
-				String gameName = JOptionPane.showInputDialog("Please Enter a Name for Your Save");
-				if(SaveGame.isFileNameExists(gameName)){
-					JOptionPane.showMessageDialog(SidePanel.this, "Please Enter a Different Name. It already exists.",gameName, JOptionPane.ERROR_MESSAGE);
-				} else {
-					saveGame(gameName);
-				}
-				
+				String gameName = JOptionPane
+						.showInputDialog("Please Enter a Name for Your Save");
+				saveGame(gameName);
 			}
 		});
-		
-		
-		
+
 		JButton retryButton = new JButton("Retry");
-		
+
 		retryButton.setOpaque(true);
 		retryButton.setVisible(true);
 		retryButton.setBackground(new Color(125, 150, 150));
 		retryButton.setForeground(new Color(128, 21, 128));
 		retryButton.setFont(new Font("Jokerman", Font.BOLD, 30));
-			
-		retryButton.setBounds(15,375,250,75);
+
+		retryButton.setBounds(15, 375, 250, 75);
 		this.add(retryButton);
-	
+
 		retryButton.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent m) {
 				retry();
 			}
 		});
-		
-		
-			
+
 		JButton quitButton = new JButton("Quit");
 		quitButton.setOpaque(true);
 		quitButton.setVisible(true);
 		quitButton.setBackground(new Color(125, 150, 150));
 		quitButton.setForeground(new Color(128, 21, 128));
 		quitButton.setFont(new Font("Jokerman", Font.BOLD, 30));
-		
-		quitButton.setBounds(15,450,250,75);
+
+		quitButton.setBounds(15, 450, 250, 75);
 		this.add(quitButton);
-	
+
 		quitButton.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent m) {
 				quit();
 			}
 		});
-		
 
-	
-		
-		
-		
-		
-		
-		
-		
 	}
 
 	/**
@@ -136,16 +100,14 @@ public class SidePanel extends JPanel {
 
 		g.setColor(Color.white);
 		g.setFont(new Font("Jokerman", Font.BOLD, 20));
-		g.drawString("Target Score: "+ getTargetScore(), 4, 90);
+		g.drawString("Target Score: " + getTargetScore(), 4, 90);
 		g.drawString("Level: " + level, 4, 130);
-		g.drawString("Moves Left: " +  moveCount, 4, 170);
-		g.drawString("Score: " + currentScore, 4, 210);
+		g.drawString("Moves Left: " + moveCount, 4, 170);
+		g.drawString("Score: " + currentScore * level, 4, 210);
 		g.setFont(new Font("Jokerman", Font.BOLD, 26));
-		//g.setColor(new Color(128, 21, 128));
-		//g.drawString("Made by Cekirdek", 4, 550);
-		
-		
-		
+		// g.setColor(new Color(128, 21, 128));
+		// g.drawString("Made by Cekirdek", 4, 550);
+
 	}
 
 	/**
@@ -163,7 +125,12 @@ public class SidePanel extends JPanel {
 	 * @modifies : while score increases, move count decreases
 	 */
 
-	public void updateScore() {
+	public static boolean levelIsTimeBased() {
+		if (level%3==2) {
+			return true;			
+		} else{	
+			return false;			
+		}	
 
 	}
 
@@ -175,54 +142,38 @@ public class SidePanel extends JPanel {
 	 * 
 	 */
 	public void retry() {
-		
-		
-		//ececcece
-		 int response = JOptionPane.showConfirmDialog(null, "Do you want to retry?", "Confirmation",
-			        JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
-		 if (response == JOptionPane.NO_OPTION) {
-		      System.out.println("No button clicked");
-		        }
-		 else {
-		    	java.awt.EventQueue.invokeLater(new Runnable() {
-					public void run() {
-						try {
-							GameBoard gameBoard = GameRules.getGameBoard();
-							gameBoard.clearTable();
-							GameBoard.selectedLokum1 = null;
-							GameBoard.selectedLokum2 = null;
-							currentScore = 0;
-							moveCount = getMoveCount();
-						
-							gameBoard.fillTableWithLokum();
-						
-							GameController.initGame();
-						} catch (IOException e) {
-							// TODO Auto-generated catch block
-							e.printStackTrace();
-						}
-						System.out.println("The game is being restarted now");
-					}
-				});
-		    }
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		//ecececce
-	}
 
+		// ececcece
+		int response = JOptionPane.showConfirmDialog(null,
+				"Do you want to retry?", "Confirmation",
+				JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+		if (response == JOptionPane.NO_OPTION) {
+			System.out.println("No button clicked");
+		} else {
+			java.awt.EventQueue.invokeLater(new Runnable() {
+				public void run() {
+					try {
+						GameBoard gameBoard = GameRules.getGameBoard();
+						gameBoard.clearTable();
+						GameBoard.selectedLokum1 = null;
+						GameBoard.selectedLokum2 = null;
+						currentScore = 0;
+						moveCount = getMoveCount();
+
+						gameBoard.fillTableWithLokum();
+
+						GameController.initGame();
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					System.out.println("The game is being restarted now");
+				}
+			});
+		}
+
+		// ecececce
+	}
 
 	/**
 	 * @requires : game should be opened.
@@ -232,19 +183,21 @@ public class SidePanel extends JPanel {
 	 */
 
 	public void quit() {
-		 int response = JOptionPane.showConfirmDialog(null, "Do you want to save game?", "Confirmation",
-			        JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
-		 if (response == JOptionPane.NO_OPTION) {
-		      System.out.println("No button clicked");
-		      System.exit(0);
-		    } else {
-		      System.out.println("Yes button clicked");
-		      String gameName = JOptionPane.showInputDialog("Lutfen Oyun Ismi Yaziniz.");
-		      saveGame(gameName);
-		      System.exit(0);
-		      //ececeececece
-		    }
-		
+		int response = JOptionPane.showConfirmDialog(null,
+				"Do you want to save game?", "Confirmation",
+				JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+		if (response == JOptionPane.NO_OPTION) {
+			System.out.println("No button clicked");
+			System.exit(0);
+		} else {
+			System.out.println("Yes button clicked");
+			String gameName = JOptionPane
+					.showInputDialog("Please Enter A Game Name");
+			saveGame(gameName);
+			System.exit(0);
+			// ececeececece
+		}
+
 	}
 
 	/**
@@ -256,7 +209,7 @@ public class SidePanel extends JPanel {
 	 * @modifies : it saves the mentioned informations to the XML File
 	 */
 	public void saveGame(String s) {
-		
+
 		XMLObject xml = new XMLObject();
 		xml.setLokumArray(getLokumArray());
 		xml.setCurrentScore(currentScore);
@@ -266,16 +219,13 @@ public class SidePanel extends JPanel {
 
 		try {
 			SaveGame.write(xml);
-		} catch(Exception e){
-			
-		}
-	
-		
-	}
-	
+		} catch (Exception e) {
 
-	
-	public Lokum[][] getLokumArray(){
+		}
+
+	}
+
+	public Lokum[][] getLokumArray() {
 		return GameBoard.lokumArray;
 	}
 
@@ -291,8 +241,6 @@ public class SidePanel extends JPanel {
 		return level;
 
 	}
-	
-
 
 	@Override
 	public String toString() {
@@ -310,15 +258,13 @@ public class SidePanel extends JPanel {
 	}
 
 	public static int setMoveCount() {
-		return 55-level*5;
-		 
-				
+		return 55 - level * 5;
+
 	}
 
 	public static int setTargetScore() {
-		return level*50000;
-		
-	
+		return level * 5000;
+
 	}
 
 }
