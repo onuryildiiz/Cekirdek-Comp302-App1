@@ -2,6 +2,7 @@ package Core;
 
 public class XMLObject {
 
+	public static int time;
 	public Lokum[][] lokumArray;
 	public int currentScore;
 	public int level;
