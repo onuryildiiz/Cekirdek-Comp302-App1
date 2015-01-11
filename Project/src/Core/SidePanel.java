@@ -9,9 +9,7 @@ import javax.swing.*;
 
 public class SidePanel extends JPanel {
 
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 	public static int currentScore = 0;
 	public static int moveCount = 50;
@@ -76,7 +74,12 @@ public class SidePanel extends JPanel {
 				Core.GameRules.t.stop();
 				String gameName = JOptionPane
 						.showInputDialog("Please Enter a Name for Your Save");
-				saveGame(gameName);
+				if(SaveGame.isFileNameExists(gameName)){
+										JOptionPane.showMessageDialog(SidePanel.this, "Please Enter a Different Name. It already exists.",gameName, JOptionPane.ERROR_MESSAGE);
+									} else {
+										saveGame(gameName);
+									}
+				
 				Core.GameRules.t.start();
 			}
 		});
