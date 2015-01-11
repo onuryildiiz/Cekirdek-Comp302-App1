@@ -18,7 +18,7 @@ public class SidePanel extends JPanel {
 	public static int level = 1;
 	public static int time = 120;
 	public static GameRules GameController;
-	public static int specialMove= level;
+	public static int specialMove = level;
 	public static boolean swapButtonEnabled = false;
 
 	/**
@@ -35,7 +35,7 @@ public class SidePanel extends JPanel {
 		GameController = GameRules;
 
 		this.setLayout(null);
-		
+
 		JButton specialSwapButton = new JButton("Special Swap");
 
 		specialSwapButton.setOpaque(true);
@@ -50,12 +50,12 @@ public class SidePanel extends JPanel {
 		specialSwapButton.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent m) {
-				
-				if(specialMove>0){
+
+				if (specialMove > 0) {
 					swapButtonEnabled = true;
-					specialMove--;					
+					specialMove--;
 				}
-				
+
 			}
 		});
 
@@ -132,14 +132,20 @@ public class SidePanel extends JPanel {
 
 		g.setColor(Color.white);
 		g.setFont(new Font("Jokerman", Font.BOLD, 20));
-		int mins=time/60;
-		if(levelIsTimeBased()){
-			g.drawString("Time: " + mins + ":"+ (time-mins*60) , 4, 30);
+
+		if (levelIsTimeBased()) {
+			int mins = time / 60;
+			int secs = time - mins * 60;
+			String zero = "0";
+			if (secs > 9) {
+				zero = "";
+			}
+			g.drawString("Time: " + mins + ":" + zero + secs, 4, 30);
 		}
 		g.drawString("Target Score: " + getTargetScore(), 4, 70);
 		g.drawString("Level: " + level, 4, 110);
-		g.drawString("Moves Left: " + moveCount, 4, 150);	
-		g.drawString("Score: " + currentScore * level, 4, 190);
+		g.drawString("Moves Left: " + moveCount, 4, 150);
+		g.drawString("Score: " + currentScore, 4, 190);
 		g.drawString("Special Move: " + specialMove, 4, 230);
 		g.setFont(new Font("Jokerman", Font.BOLD, 10));
 		g.setColor(new Color(0, 0, 0));
@@ -163,13 +169,12 @@ public class SidePanel extends JPanel {
 	 */
 
 	public static boolean levelIsTimeBased() {
-		if (level%3==1) {
-			return true;			
-		} else{	
-			time=-1;
-			return false;			
-		}	
-		
+		if (level % 3 == 1) {
+			return true;
+		} else {
+			time = -1;
+			return false;
+		}
 
 	}
 
@@ -181,7 +186,7 @@ public class SidePanel extends JPanel {
 	 * 
 	 */
 	public void retry() {
-		
+
 		int response = JOptionPane.showConfirmDialog(null,
 				"Do you want to retry?", "Confirmation",
 				JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
@@ -197,8 +202,8 @@ public class SidePanel extends JPanel {
 						GameBoard.selectedLokum2 = null;
 						currentScore = 0;
 						moveCount = getMoveCount();
-						specialMove=level;
-						time=120;
+						specialMove = level;
+						time = 120;
 
 						gameBoard.fillTableWithLokum();
 
