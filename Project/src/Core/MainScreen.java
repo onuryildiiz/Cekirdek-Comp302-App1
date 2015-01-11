@@ -67,6 +67,7 @@ public class MainScreen {
 		});
 		panel.setVisible(true);
 		JButton button_2 = new JButton("Load Game");
+		
 		button_2.setOpaque(true);
 		panel.setVisible(true);
 	

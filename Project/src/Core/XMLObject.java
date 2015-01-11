@@ -41,18 +41,20 @@ public class XMLObject {
 		this.gameName = gameName;
 	}
 	
-	public void setTime(int time) {
-		this.time = time;
-	}
-	public void setSpecialMove(int specialMove) {
-		this.specialMove = specialMove;
-	}
 	public int getTime() {
 		return time;
 	}
 	public int getSpecialMove() {
 		return specialMove;
 	}
+	
+	public void setTime(int time) {
+		this.time = time;
+	}
+	public void setSpecialMove(int specialMove) {
+		this.specialMove = specialMove;
+	}
+	
 	
 	
 }
