@@ -260,6 +260,8 @@ public class SidePanel extends JPanel {
 		xml.setMoveCount(moveCount);
 		xml.setLevel(getLevel());
 		xml.setGameName(s);
+		xml.setSpecialMove(specialMove);
+		xml.setTime(time);
 
 		try {
 			SaveGame.write(xml);

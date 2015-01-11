@@ -79,18 +79,20 @@ public class MainScreen {
 				String gameName = JOptionPane.showInputDialog("Please Enter a Saved Game Name");
 				try {
 					XMLObject xml = SaveGame.read(gameName);
-					//Seluk
 					Lokum[][] lokumArray = xml.getLokumArray();
 					int currentScore = xml.getCurrentScore();
 					int level = xml.getLevel();
 					int moveCount = xml.getMoveCount();
-					
+					int time = xml.getTime();
+					int specialMove = xml.getSpecialMove();
 					new GameRules().setVisible(true);
 					GameBoard.setLokums(lokumArray);
 					GameBoard.repaintTable();
 					SidePanel.currentScore=currentScore;
 					SidePanel.level=level;
 					SidePanel.moveCount=moveCount;
+					SidePanel.time=time;
+					SidePanel.specialMove=specialMove;
 				} catch (Exception e2){
 					System.out.println("Game Not found");
 				}
