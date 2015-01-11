@@ -134,9 +134,9 @@ public class SidePanel extends JPanel {
 		g.drawString("Moves Left: " + moveCount, 4, 150);	
 		g.drawString("Score: " + currentScore * level, 4, 190);
 		g.drawString("Special Move: " + specialMove, 4, 230);
-		g.setFont(new Font("Jokerman", Font.BOLD, 26));
-		g.setColor(new Color(128, 21, 128));
-		g.drawString("Made by Cekirdek", 4, 550);
+		g.setFont(new Font("Jokerman", Font.BOLD, 10));
+		g.setColor(new Color(0, 0, 0));
+		g.drawString("Made by Cekirdek", 160, 560);
 
 	}
 

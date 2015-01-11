@@ -50,13 +50,8 @@ public final class GameBoard extends JPanel {
 			this.setVisible(true);
 			this.setOpaque(true);
 			basics();
-			// lokumArrayString();
 			addLokums(lokumArray);
 
-			// lokumArrayString();
-
-			// lokumArrayString();
-			// GameRules.slide();
 		} else {
 			System.out
 					.println("SOMETHING IS WRONG WITH FIELDS IN GAME_BOARD CLASS");
