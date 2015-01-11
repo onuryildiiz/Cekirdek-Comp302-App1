@@ -2,12 +2,14 @@ package Core;
 
 public class XMLObject {
 	
-	public static int time;
+	public int time;
 	public Lokum[][] lokumArray;
 	public int currentScore;
 	public int level;
 	public int moveCount;
+	public int specialMove;
 	public String gameName;
+	
 	public Lokum[][] getLokumArray() {
 		return lokumArray;
 	}
@@ -37,6 +39,19 @@ public class XMLObject {
 	}
 	public void setGameName(String gameName) {
 		this.gameName = gameName;
+	}
+	
+	public void setTime(int time) {
+		this.time = time;
+	}
+	public void setSpecialMove(int specialMove) {
+		this.specialMove = specialMove;
+	}
+	public int getTime() {
+		return time;
+	}
+	public int getSpecialMove() {
+		return specialMove;
 	}
 	
 	
