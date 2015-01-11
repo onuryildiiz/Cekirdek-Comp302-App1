@@ -57,7 +57,7 @@ public class GameRules extends JFrame {
         start();
         destroy();
         SidePanel.currentScore=0;
-        SidePanel.time=180;
+        SidePanel.time=120;
     }
     
     static javax.swing.Timer t;
@@ -73,7 +73,10 @@ public class GameRules extends JFrame {
                 levelPassed();
                 t.toString();
                 slide();
-                SidePanel.time--;
+                if (SidePanel.levelIsTimeBased()){
+                	SidePanel.time --;
+                }
+                
                 
             }
             
@@ -1107,7 +1110,7 @@ public class GameRules extends JFrame {
      * @Modifies:
      */
     public static boolean isGameOver() {
-        if(SidePanel.moveCount ==0){
+        if(SidePanel.moveCount ==0 || SidePanel.time==0){
             return true;
             
             
@@ -1174,6 +1177,11 @@ public class GameRules extends JFrame {
 			SidePanel.level++;
 			SidePanel.moveCount = SidePanel.getMoveCount();
 			SidePanel.getTargetScore();
+			if (SidePanel.levelIsTimeBased()){
+				SidePanel.time=120;
+			}
+			
+			SidePanel.specialMove=SidePanel.level;
 			
 			gameBoard.fillTableWithLokum();
 		

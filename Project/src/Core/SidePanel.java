@@ -16,7 +16,7 @@ public class SidePanel extends JPanel {
 	public static int currentScore = 0;
 	public static int moveCount = 50;
 	public static int level = 1;
-	public static int time = 180;
+	public static int time = 120;
 	public static GameRules GameController;
 	public static int specialMove= level;
 	public static boolean swapButtonEnabled = false;
@@ -29,7 +29,7 @@ public class SidePanel extends JPanel {
 	 * @modifies : target score, level, move count, current score will exists in
 	 *           the side panel.
 	 */
-	public SidePanel(GameRules GameRules) {
+	public SidePanel(final GameRules GameRules) {
 		setPreferredSize(new Dimension(275, 600));
 		setBackground(new Color(125, 150, 150));
 		GameController = GameRules;
@@ -50,6 +50,7 @@ public class SidePanel extends JPanel {
 		specialSwapButton.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent m) {
+				
 				if(specialMove>0){
 					swapButtonEnabled = true;
 					specialMove--;					
@@ -72,9 +73,11 @@ public class SidePanel extends JPanel {
 		saveButton.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent m) {
+				Core.GameRules.t.stop();
 				String gameName = JOptionPane
 						.showInputDialog("Please Enter a Name for Your Save");
 				saveGame(gameName);
+				Core.GameRules.t.start();
 			}
 		});
 
@@ -92,7 +95,9 @@ public class SidePanel extends JPanel {
 		retryButton.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent m) {
+				Core.GameRules.t.stop();
 				retry();
+				Core.GameRules.t.start();
 			}
 		});
 
@@ -109,7 +114,9 @@ public class SidePanel extends JPanel {
 		quitButton.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent m) {
+				Core.GameRules.t.stop();
 				quit();
+				Core.GameRules.t.start();
 			}
 		});
 
@@ -159,8 +166,10 @@ public class SidePanel extends JPanel {
 		if (level%3==1) {
 			return true;			
 		} else{	
+			time=-1;
 			return false;			
 		}	
+		
 
 	}
 
@@ -172,8 +181,7 @@ public class SidePanel extends JPanel {
 	 * 
 	 */
 	public void retry() {
-
-		// ececcece
+		
 		int response = JOptionPane.showConfirmDialog(null,
 				"Do you want to retry?", "Confirmation",
 				JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
@@ -189,6 +197,8 @@ public class SidePanel extends JPanel {
 						GameBoard.selectedLokum2 = null;
 						currentScore = 0;
 						moveCount = getMoveCount();
+						specialMove=level;
+						time=120;
 
 						gameBoard.fillTableWithLokum();
 
@@ -202,7 +212,6 @@ public class SidePanel extends JPanel {
 			});
 		}
 
-		// ecececce
 	}
 
 	/**
